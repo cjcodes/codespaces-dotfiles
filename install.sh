@@ -5,12 +5,16 @@ PACKAGES=(
   wget
   fd-find
   ripgrep
-  neovim
   xclip
 )
 
 sudo apt update
 sudo apt install -y ${PACKAGES[@]}
+
+wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz
+tar xzvf nvim-linux-x86_64.tar.gz nvim
+sudo mv nvim /opt/nvim
+sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim
 
 if [ ! -d ~/.config/nvim ]; then
   git submodule update --init
