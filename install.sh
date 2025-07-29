@@ -10,7 +10,7 @@ PACKAGES=(
 )
 
 sudo apt update
-sudo apt install ${PACKAGES[@]}
+sudo apt install -y ${PACKAGES[@]}
 
 if [ ! -d ~/.config/nvim ]; then
   git submodule update --init
