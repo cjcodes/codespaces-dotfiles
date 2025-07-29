@@ -3,12 +3,13 @@
 PACKAGES=(
   jq
   wget
-  fd
+  fd-find
   ripgrep
   neovim
   xclip
 )
 
+sudo apt update
 sudo apt install ${PACKAGES[@]}
 
 if [ ! -d ~/.config/nvim ]; then

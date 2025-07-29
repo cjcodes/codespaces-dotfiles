@@ -1,3 +1,3 @@
 [submodule "setup-scripts"]
 	path = setup-scripts
-	url = git@github.com:cjcodes/setup-scripts.git
+	url = https://github.com/cjcodes/setup-scripts.git
